@@ -9,7 +9,8 @@ def get_spark_session(app_name):
 
 # PEGA OS DADOS DO YAML
 def get_config(config_path):    
-    base_path = Path(__file__).resolve().parent.parent  # volta dois níveis: ingestion/utils.py → ingestion/ → raiz do projeto
+    # VOLTA PARA A RAIZ DO PROJETO
+    base_path = Path(__file__).resolve().parent.parent
     config_path = base_path / config_path
 
     with open(config_path, "r") as f:
