@@ -1,7 +1,7 @@
 source:
   type: csv
-  path: /Users/paulopimentel/Documents/projetos/spike/data_ingestion_pipeline_pyspark/data/raw/clientes.csv
+  path: /data/raw/clientes.csv
 
 destination:
   format: parquet
-  path: /Users/paulopimentel/Documents/projetos/spike/data_ingestion_pipeline_pyspark/data/processed/cliente.parquet
+  path: /data/processed/cliente.parquet
